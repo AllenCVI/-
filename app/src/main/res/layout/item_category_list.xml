@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/lin"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/len_8"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/delete_img"
+        android:src="@drawable/ic_remove_circle_black_24dp"
+        android:layout_height="wrap_content"
+    />
+    <ImageView
+        android:layout_width="@dimen/len_32"
+        android:id="@+id/category_img"
+        android:layout_marginStart="@dimen/len_8"
+        android:layout_height="@dimen/len_32"
+        android:src="@drawable/category_e_snack_normal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/category_text"
+        android:layout_marginStart="@dimen/len_16"
+        android:layout_height="wrap_content"
+        android:text="零食"
+        android:textSize="@dimen/font_12"
+        android:textColor="@color/first_text"
+        android:src="@drawable/category_e_snack_normal"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="@dimen/len_16"
+        android:src="@drawable/ic_item_third_bar"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</LinearLayout>

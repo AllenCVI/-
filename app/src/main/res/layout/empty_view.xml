@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_view"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+
+    <ImageView
+        android:id="@+id/empty_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/no_data" />
+
+    <TextView
+        android:id="@+id/empty_view_tv"
+        style="@style/MultipleStatusView.Content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/empty_img"
+        android:text="@string/empty_view_hint" />
+
+</LinearLayout>

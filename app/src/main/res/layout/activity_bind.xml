@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_head_complex_first"></include>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_marginStart="@dimen/len_16"
+    android:layout_marginEnd="@dimen/len_16"
+    android:layout_marginTop="@dimen/len_68"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机号"
+        android:textColor="@color/first_text"/>
+    <EditText
+        android:layout_width="0dp"
+        android:background="@null"
+        android:layout_marginStart="@dimen/len_16"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/edit_phone"
+        android:textCursorDrawable="@drawable/ic_cursor"
+        android:textSize="@dimen/font_14"
+        android:inputType="number"
+        android:textColorHint="@color/textThird"
+        android:hint="请输入手机号"/>
+      <ImageView
+          android:layout_width="wrap_content"
+          android:id="@+id/bind_clear"
+          android:layout_height="wrap_content"
+          android:src="@drawable/login_input_clear_pressed"/>
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/len_8"
+        android:background="@color/line"
+        android:layout_marginEnd="@dimen/len_16"
+        android:layout_marginStart="@dimen/len_16"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/len_16"
+        android:id="@+id/bind_button"
+        android:layout_marginEnd="@dimen/len_16"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        style="?android:attr/borderlessButtonStyle"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/first_text"
+        android:layout_marginTop="@dimen/len_32"
+        android:background="@drawable/bg_orange_btn"/>
+</LinearLayout>

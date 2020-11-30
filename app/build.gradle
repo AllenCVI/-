@@ -1,0 +1,150 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.kuxuan.moneynote"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    //签名
+    signingConfigs {
+        myConfig {
+            storeFile file("bangnidai.jks")      //签名文件
+            storePassword "bangnidai123"
+            keyAlias "bangnidai"
+            keyPassword "bangnidai123"  //签名密码
+        }
+
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                            && 'release'.equals(variant.buildType.name)) {
+                        def apkFile = new File(
+                                output.outputFile.getParent(),
+                                "qianduoduo${variant.flavorName}_v${variant.versionName}_${releaseTime()}.apk")
+                        output.outputFile = apkFile
+                    }
+                }
+            }
+        }
+
+        debug {
+            signingConfig signingConfigs.myConfig
+            minifyEnabled false
+            proguardFiles 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        yingyongbao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1001"]
+            buildConfigField 'String', 'CHANNLE', '"1001"'
+        }
+
+        vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1002"]
+            buildConfigField 'String', 'CHANNLE', '"1002"'
+        }
+
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1003"]
+            buildConfigField 'String', 'CHANNLE', '"1003"'
+        }
+
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1005"]
+            buildConfigField 'String', 'CHANNLE', '"1005"'
+        }
+
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1004"]
+            buildConfigField 'String', 'CHANNLE', '"1004"'
+        }
+
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1006"]
+            buildConfigField 'String', 'CHANNLE', '"1006"'
+        }
+
+        c360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "1000"]
+            buildConfigField 'String', 'CHANNLE', '"1000"'
+        }
+
+
+        atext {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "2000"]
+            buildConfigField 'String', 'CHANNLE', '"2000"'
+        }
+
+
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:support-v4:$rootProject.androidSupportVersion"
+    compile "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    compile "com.android.support:appcompat-v7:$rootProject.androidSupportVersion"
+    compile "net.qiujuer.genius:ui:$rootProject.geniusVersion"
+    compile "net.qiujuer.genius:res:$rootProject.geniusVersion"
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.logging_interceptorVersion"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    compile "com.android.support:design:$rootProject.androidSupportVersion"
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    compile "com.github.addappcn:android-pickers:$rootProject.androidpickerVersion"
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng-analytics-7.4.0.jar')
+    compile files('libs/umeng-common-1.4.0.jar')
+    compile 'com.classic.common:multiple-status-view:1.3'
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.zhy:autolayout:1.4.5'
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.jzxiang.pickerview:TimePickerDialog:1.0.1'
+    compile 'com.github.anzaizai:EasySwipeMenuLayout:1.1.2'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile 'com.github.yalantis:ucrop:2.2.1'
+    compile "de.hdodenhof:circleimageview:$rootProject.circleimageviewVersion"
+    compile project(':MoneyNote_Sqlite')
+}

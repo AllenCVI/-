@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout
+        android:id="@+id/es"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentView="@+id/content"
+        app:rightMenuView="@+id/right">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/len_48">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_marginStart="@dimen/len_16"
+       android:textColor="@color/first_text"
+       android:layout_height="wrap_content"
+       android:text="提醒时间"/>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/time"
+        android:textColor="@color/first_text"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/len_16"
+        android:text="14:37"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red_500"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/len_56"
+                android:layout_height="49dp"
+                android:id="@+id/right_menu"
+                android:gravity="center"
+                android:clickable="true"
+                android:textColor="@color/white"
+                android:text="删除" />
+
+        </LinearLayout>
+    </com.guanaj.easyswipemenulibrary.EasySwipeMenuLayout>
+</LinearLayout>

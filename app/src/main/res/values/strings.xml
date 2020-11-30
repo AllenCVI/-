@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">钱多随手记账</string>
+    <!--<string name="app_name">钱多多记账本-3秒钟快速口袋记账软件</string>-->
+    <string name="mine">我的</string> 
+    <string name="no_login">未登录</string>
+    <string name="bill">账单</string>
+    <string name="addbill">记账</string>
+    <string name="me_category">类别设置</string>
+    <string name="me_yusuan">预算设置</string>
+    <string name="me_logo">关于我们</string>
+    <string name="bind_phone">绑定手机号</string>
+    <string name="person">个人信息</string>
+    <string name="me_help">帮助</string>
+    <string name="me_alarm">定时提醒</string>
+    <string name="me_more">去应用市场给钱多随手记账评分</string>
+    <string name="me_recommend">分享APP</string>
+    <string name="bill_export">账单导出</string>
+    <string name="me_opinion">意见反馈</string>
+    <string name="addcategory">+添加类别</string>
+    <string name="addnotice">+添加提醒</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+
+    <!--登录注册-->
+
+
+    <string name="wchat_login">微信登录</string>
+    <string name="more_login_type">更多登录方式</string>
+    <string name="phone">手机号</string>
+    <string name="phone_hint">请输入手机号</string>
+    <string name="error_phone">请输入正确手机号</string>
+    <string name="error_pwd">密码不能为空</string>
+    <string name="password">密码</string>
+    <string name="makesure_pwd">确认密码</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="register">注册</string>
+    <string name="complete">完成</string>
+    <string name="next_step">下一步</string>
+    <string name="other_logintype">其他登录方式</string>
+    <string name="verification_code">验证码</string>
+    <string name="verification_code_hint">请输入验证码</string>
+
+    <string name="register_three_pwd">6-16位数字、字母组合</string>
+    <string name="register_three_pwd_error1">密码不能少于6位</string>
+    <string name="register_three_againpwd">请再次输入密码</string>
+    <string name="no_pwd">请输入密码</string>
+    <string name="no_phone">请输入手机号</string>
+    <string name="no_againpwd">请输入确认密码</string>
+    <string name="nosample_pwd">两次密码输入不一致</string>
+
+
+    <!--提示文案-->
+    <string name="code_sendding">验证码发送中...</string>
+    <string name="code_validate">验证码校验中...</string>
+    <string name="registering">注册中...</string>
+    <string name="logining" >登录中...</string>
+    <string name="loadding" >加载中...</string>
+    <string name="deleteing" >退出中...</string>
+    <string name="amble_upload">相册上传</string>
+    <string name="take_photo_upload">拍照上传</string>
+    <string name="cancel">取消</string>
+    <string name="delteteing">删除中...</string>
+    <string name="binding">绑定中...</string>
+    <string name="repeat">重新操作试试</string>
+    <string name="bindwechat">绑定成功</string>
+    <string name="nonetwork_toast">无网络服务，请检查网络或需要在"设\n置"中为此应用开启网络服务</string>
+    <string name="nonetwork">当前网络不可用，请检测您的网络设置</string>
+    <string name="nologin">数据存在丢失风险，请尽快登录!</string>
+
+
+    <!--我的界面-->
+    <string name="income">收入</string>
+    <string name="pay">支出</string>
+    <string name="balance">结余</string>
+    <string name="space">10月</string>
+    <string name="accountbill_year">年度账单</string>
+    <string name="score_shop">积分兑奖</string>
+
+    <!--个人-->
+    <string name="exit">退出登录</string>
+
+    <!--意见反馈-->
+    <string name="hint">我们将尽快处理您的反馈，您可以留下您的微信号或者添加客服MM微信：qianduoduojizhang，详细咨询，感谢支持！</string>
+
+    <!--关于我们-->
+    <string name="about">钱多多记账本</string>
+
+
+    <!--修改密码-->
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="update_password">修改密码</string>
+    <string name="hint_old">请输入旧密码</string>
+    <string name="sure">确定</string>
+
+    <!--微信登录-->
+    <string name="we_chat_success">微信登录成功</string>
+    <string name="we_chat_fail">微信登录失败</string>
+    <string name="we_chat_cancel">微信登录取消</string>
+
+    <!--账单导出-->
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间</string>
+    <string name="emailadress">请输入邮箱地址</string>
+    <string name="export">导出</string>
+
+    <!--积分-->
+    <string name="score_exchange">积分兑换</string>
+    <string name="score_detial">积分明细</string>
+    <string name="score_rule">积分规则</string>
+    <string name="save">保存</string>
+    <string name="lose_token">您的账号已经在别的设备上登录，请重新登录</string>
+</resources>

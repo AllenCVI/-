@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/pop_chart_layout"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_chartpop"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="前3笔交易"
+            android:padding="3dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_chart_title_pop"
+            android:textSize="@dimen/text_small_size"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/pop_chartview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp"
+        android:background="@drawable/bg_chartpop"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/pop_chart_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@mipmap/chart_marker_pointer_bg" />
+
+</RelativeLayout>

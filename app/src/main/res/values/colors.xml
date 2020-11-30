@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bg_title_gray">#fed953</color>
+    <color name="first_text">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_color">#f5f4f9</color>
+    <color name="category_color">#f5f5f5</color>
+    <color name="bu_color">#454553</color>
+    <color name="bg_gray">#efeff4</color>
+    <color name="bt_gray2">#dddddd</color>
+
+    <color name="line">#f4f4f4</color>
+    <color name="textSecond">#666666</color>
+    <color name="textThird">#999999</color>
+    <color name="bu_yellow_bg">#FFE500</color>
+    <color name="yellow_apply">#f5e993</color>
+
+    <color name="split_line_color">#E6E6E6</color>
+    <color name="gray">#f1f1f1</color>
+    <color name="gray_text">#c6c6c6</color>
+    <color name="gray_deep_text">#b5b5b5</color>
+
+    <color name="bg_chart_color_5">#8185fc</color>
+    <color name="bg_chart_color_4">#4bb9e8</color>
+    <color name="bg_chart_color_3">#4ebc98</color>
+    <color name="bg_chart_color_2">#ec5a57</color>
+    <color name="bg_chart_color_1">#fec242</color>
+    <color name="bg_chart_color_0">#efeff4</color>
+
+    <color name="loadingbg">#444444</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="textcolor">#222</color>
+
+    <color name="hometab_skin_1">#F74759</color>
+    <color name="hometab_skin_2">#ffc600</color>
+    <color name="hometab_skin_3">#2EB370</color>
+    <color name="hometab_skin_4">#F67BBE</color>
+    <color name="hometab_skin_5">#41C3D4</color>
+    <color name="hometab_skin_6">#FBAA03</color>
+
+</resources>

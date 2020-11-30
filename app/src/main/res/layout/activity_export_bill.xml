@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+    >
+
+    <include layout="@layout/layout_head_complex_first"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:layout_marginTop="10px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:text="@string/starttime"
+            android:textSize="15px"
+            android:textColor="@color/textSecond" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tv_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2018年03月15日"
+            android:drawableRight="@drawable/common_right_arrow_normal"
+            android:layout_marginRight="15px"
+            android:textSize="12px"
+            android:gravity="center_vertical"
+            android:textColor="@color/textSecond"
+            android:drawablePadding="15px"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:text="@string/endtime"
+            android:textSize="15px"
+            android:textColor="@color/textSecond" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <TextView
+            android:id="@+id/tv_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2018年03月15日"
+            android:drawableRight="@drawable/common_right_arrow_normal"
+            android:layout_marginRight="15px"
+            android:textSize="12px"
+            android:gravity="center_vertical"
+            android:textColor="@color/textSecond"
+            android:drawablePadding="15px"
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="导出文件到："
+        android:layout_marginLeft="15px"
+        android:textColor="@color/textSecond"
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42px"
+        android:layout_marginTop="10px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginLeft="16px"
+            android:hint="@string/emailadress"
+            android:textColorHint="@color/textThird"
+            android:textSize="15px"
+            android:textColor="@color/textThird" />
+            />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_export"
+        android:layout_width="315px"
+        android:layout_height="50px"
+        android:layout_marginTop="40px"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/export"
+        android:gravity="center"
+        android:textSize="15px"
+        android:background="@color/bt_gray2"
+        />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_skin"
+        android:layout_width="80px"
+        android:layout_height="50px"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:src="@drawable/skin_icon"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="80px"
+        android:layout_height="50px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="5px"
+        android:background="@drawable/corn"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="60px"
+        android:layout_height="5px"
+        android:progress="0"
+        style="@style/progressbar_my"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/check_skin"
+        android:layout_marginLeft="82px"
+        android:visibility="invisible"
+        />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

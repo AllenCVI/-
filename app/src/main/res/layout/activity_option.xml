@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<include layout="@layout/layout_head_complex_first"></include>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/action_edittext"
+                android:background="@drawable/bg_edit"
+                android:enabled="true"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minLines="8"
+                android:maxLines="10"
+                android:padding="@dimen/len_8"
+                android:textSize="@dimen/font_14"
+                android:scrollbars="vertical"
+                android:textCursorDrawable="@drawable/ic_cursor"
+                android:hint="@string/hint"
+                android:textColorHint="@color/textThird"
+                android:textColor="@color/first_text"
+                android:layout_marginTop="@dimen/len_16"
+                android:layout_marginStart="@dimen/len_16"
+                android:layout_marginEnd="@dimen/len_16"
+                android:layout_height="180dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/count_tv"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textSecond"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@id/action_edittext"
+                android:layout_marginEnd="@dimen/len_32"
+                android:layout_marginBottom="@dimen/len_8"
+                android:textSize="@dimen/font_14"
+                android:text="还可以输100字"/>
+        </RelativeLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/len_28"
+                android:layout_marginEnd="@dimen/len_16"
+                android:layout_marginStart="@dimen/len_16"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/len_16"
+                android:textStyle="bold"
+                android:id="@+id/action_button"
+                android:layout_height="@dimen/len_44"
+                android:background="@drawable/bg_orange_btn"
+
+                />
+
+</LinearLayout>
+

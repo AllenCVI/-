@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_reportsingle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_report_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include layout="@layout/layout_head_complex_first" />
+
+        <LinearLayout
+            android:id="@+id/fragment_reportsingle_viewgroup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_title_gray"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <RadioGroup
+                android:id="@+id/activity_baobiao_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10px"
+                android:background="@drawable/radio_gray_bg"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/activity_baobiao_rabtn_week"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_rabtn_left_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="周"
+                    android:textColor="@color/select_rabtn_color"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/activity_baobiao_rabtn_month"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_rabtn_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="月"
+                    android:textColor="@color/select_rabtn_color"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/activity_baobiao_rabtn_year"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/select_rabtn_bg_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="年"
+                    android:textColor="@color/select_rabtn_color"
+                    android:textSize="15dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyView="@layout/empty_view"
+        app:errorView="@layout/error_view"
+        app:loadingView="@layout/loading_view"
+        app:noNetworkView="@layout/no_custorm_network_view">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/fragment_report_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/black"
+                app:tabIndicatorHeight="2dp"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/gray_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/split_line_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <include
+                    android:id="@+id/fragment_reportsingle_nodata_layout"
+                    layout="@layout/empty_view"
+                    android:visibility="invisible" />
+
+
+                <include
+                    android:id="@+id/fragment_reportsingle_layout"
+                    layout="@layout/fragment_report_detial" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </com.classic.common.MultipleStatusView>
+
+
+</LinearLayout>

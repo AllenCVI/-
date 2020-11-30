@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_head_complex_first" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/register_top_margin"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="@string/phone"
+                android:textSize="@dimen/text_normal_size" />
+
+
+            <EditText
+                android:id="@+id/activity_register_first_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:maxLength="13"
+                android:inputType="number"
+                android:background="@null"
+                android:hint="@string/phone_hint"
+                android:textColorHint="@color/gray_text"
+                android:textSize="@dimen/text_normal_size" />
+
+
+            <ImageView
+                android:id="@+id/activity_register_first_delete_img"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible"
+                android:src="@mipmap/login_input_clear_pressed" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/split_line_color" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_register_first_register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:enabled="false"
+        android:layout_marginTop="40dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@drawable/bg_gray_btn"
+        android:text="@string/register"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/text_big_size" />
+</LinearLayout>
